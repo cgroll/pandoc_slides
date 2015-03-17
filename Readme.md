@@ -81,3 +81,24 @@ git subtree add --prefix reveal.js https://github.com/hakimel/reveal.js.git mast
 git subtree add --prefix d3 https://github.com/mbostock/d3.git master --squash
 git subtree add --prefix MathJax https://github.com/mathjax/MathJax.git master --squash
 ```
+
+## Run local server
+
+One simple way is through usage of Python's built-in server:
+
+```sh
+python -m SimpleHTTPServer 8888 &
+```
+
+Sometimes I have problems with correctly shutting it down. Then I
+simply need to pull the process to the foreground again, and shut it
+down with `Ctrl-C` once more.
+
+```sh
+fg
+```
+
+For detailed instructions take a look at the [d3
+webpage](https://github.com/mbostock/d3/wiki#using). 
+
+
