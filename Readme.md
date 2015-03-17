@@ -74,3 +74,10 @@ Using d3:
 - else: incorporate all rendering scripts locally, and start local
   server for presentation
 
+## Adding rendering scripts
+
+#+BEGIN_SRC sh
+git subtree add --prefix reveal.js https://github.com/hakimel/reveal.js.git master --squash
+git subtree add --prefix d3 https://github.com/mbostock/d3.git master --squash
+git subtree add --prefix MathJax https://github.com/mathjax/MathJax.git master --squash
+#+END_SRC
